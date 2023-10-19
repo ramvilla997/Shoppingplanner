@@ -1,0 +1,133 @@
+/* Styles specific to the sign-up screen */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, rgb(138, 71, 235), rgb(155, 98, 239)); /* Moved here to fill entire screen */
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Changed from center to flex-end */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 10;
+  left: 0;
+  padding-bottom: 50px; /* Some padding to prevent the container from touching the very bottom */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    max-width: 800px;
+    max-height: 800px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .form-container:hover {
+    transform: scale(1.02);
+  }
+  
+  .form-title {
+    color: rgb(6, 6, 6);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  .fields-container {
+    width: 100%;
+    padding: 0 20px;  /* Adjusted padding to only left and right */
+  }
+  
+  .input-field {
+    width: calc(100% - 40px);  /* Subtracting the left and right padding */
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    box-sizing: border-box;  /* This ensures that padding and border are included in the width */
+    transition: border-color 0.3s;
+  }
+  
+  
+  .input-field:focus {
+    border-color: rgb(138, 71, 235);
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(138, 71, 235);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: rgb(155, 98, 239);
+  }
+  
+  .footer {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .switch-link {
+    color: rgb(138, 71, 235);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.1rem;
+  }
+  
+  /* For tablets */
+  @media only screen and (max-width: 768px) {
+    .form-container {
+      width: 80%;
+      padding: 20px;
+    }
+  
+    .input-field, .submit-btn {
+      padding: 15px;
+      font-size: 1rem;
+    }
+  }
+  
+  /* For mobile screens */
+  @media only screen and (max-width: 480px) {
+    .page-container {
+      padding: 5% 3%;
+    }
+  
+    .form-container {
+      width: 100%;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .form-title {
+      font-size: 1.8rem;
+    }
+  
+    .input-field, .submit-btn {
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 1rem;
+    }
+  
+    /* .footer {
+      margin-top: 20px;
+    } */
+  }
+  
