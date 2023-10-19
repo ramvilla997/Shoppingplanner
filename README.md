@@ -1,1 +1,1 @@
-# Shoppingplanner
+# Shoppingplanner (Plan2Shop)
