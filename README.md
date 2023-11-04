@@ -1,1 +1,1 @@
-# Shoppingplanner (Plan2Shop)
+# Shoppingplanner  FrontEnd (Plan2Shop)
